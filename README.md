@@ -23,7 +23,7 @@ Algoritmo para alterar, buscar, criar e deletar cadastros dentro de um banco de 
 
 <li>Após isso, será mostrado uma janela com os campos de criar, buscar, alterar e deletar.</li>
 
-<li>Para criar um cadastro, vá em Criar, preencha os dados (telefone opcional) e clique em cadastrar. <b>OBS:> somente os e-mails válidos e não cadastrados podem ser cadastrados.</li>
+<li>Para criar um cadastro, vá em Criar, preencha os dados (telefone opcional) e clique em cadastrar. <b>OBS:</b> somente os e-mails válidos e não cadastrados podem ser cadastrados.</li>
 
 <li>Para alterar uma informação em um cadastro já feito, basta preencher o seu e-mail e o dado que será alterado.</li>
 
