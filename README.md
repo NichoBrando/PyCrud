@@ -15,6 +15,7 @@ Algoritmo para alterar, buscar, criar e deletar cadastros dentro de um banco de 
 <ol>
 <li>Caso não possua o MySQL e o Xampp, veja o <a href="https://www.youtube.com/watch?v=COepL5-bNNI">vídeo</a> feito pelo Gustavo Guanabara do canal Curso em Vídeo</li>
 <li>Para o mysql-connector e o validate_email: vá até a prompt de comando e digite "pip install mysql-connector-python" e depois "pip install validate_email"</li>
+</ol>
 <h2><b>Como utilizar?</b></h2>
 
 <ol>
