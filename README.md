@@ -29,3 +29,8 @@ Algoritmo para alterar, buscar, criar e deletar cadastros dentro de um banco de 
 
 <li>Para buscar as informações ou deletar o cadastro, basta ir em Buscar/Deletar e colocar o e-mail alvo.</li>
 </ol>
+
+<h3><b>Atualizações:</b></h3>
+<ol>
+	<li><b>11/04/2020 :</b>Não é mais possível cadastrar o mesmo e-mail, a não ser que ele seja apagado do banco de dados.</li>
+</ol>

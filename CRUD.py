@@ -26,6 +26,15 @@ class JanelaCRUD(Tk):
         self.builderlayout()
         self.title("PyCrud")
 
+    def jaCadastrado(self):
+        email = str(self.cadastroEmail.get())
+        email = email.strip(' ')
+        comando = """select count(email) from cadastro where email = %s"""
+        x = self.conexaoDB.execute(comando, (email, ))
+        if(x>0):
+            return False
+        return True
+
     def cadastrar(self):
         erro = ""
         nome = str(self.cadastroNome.get())
@@ -40,6 +49,8 @@ class JanelaCRUD(Tk):
         telefone = str(self.cadastroTelefone.get())
         telefone = telefone.strip(' ')
         self.cadastroMsg.place(x=15, y= 170)
+        if(self.jaCadastrado):
+            is_valid = False
         if telefone.isdigit() and len(telefone) >= 10  or telefone == "":
             if is_valid and len(nome) > 0:
                 try:
@@ -53,7 +64,7 @@ class JanelaCRUD(Tk):
                     pass
             else:
                 self.cadastroMsg["fg"] = 'red'
-                self.cadastroMsg["text"] = erro
+                self.cadastroMsg["text"] = "erro, já cadastrado"
         else:
             self.cadastroMsg["fg"]= 'red'
             self.cadastroMsg["text"] = "Telefone inválido! :-("
