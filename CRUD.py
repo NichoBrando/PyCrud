@@ -49,7 +49,7 @@ class JanelaCRUD(Tk):
         telefone = str(self.cadastroTelefone.get())
         telefone = telefone.strip(' ')
         self.cadastroMsg.place(x=15, y= 170)
-        if(self.jaCadastrado):
+        if(not self.jaCadastrado):
             is_valid = False
         if telefone.isdigit() and len(telefone) >= 10  or telefone == "":
             if is_valid and len(nome) > 0:
@@ -64,7 +64,7 @@ class JanelaCRUD(Tk):
                     pass
             else:
                 self.cadastroMsg["fg"] = 'red'
-                self.cadastroMsg["text"] = "erro, já cadastrado"
+                self.cadastroMsg["text"] = "erro, já cadastrado ou e-mail inválido"
         else:
             self.cadastroMsg["fg"]= 'red'
             self.cadastroMsg["text"] = "Telefone inválido! :-("
