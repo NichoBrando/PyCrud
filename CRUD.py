@@ -10,7 +10,7 @@ def limitaDigito(entrada, i):
 class JanelaCRUD(Tk):
     def __init__(self, master=None):
         super().__init__(master)
-        self.conexao = conexao = mysql.connect(
+        self.conexao = mysql.connect(
             host="localhost",
             user="root",
             passwd="",
