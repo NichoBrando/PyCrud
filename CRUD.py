@@ -25,6 +25,7 @@ class JanelaCRUD(Tk):
         self.limitadorG = self.register(func=limitaDigito)
         self.builderlayout()
         self.title("PyCrud")
+        self.mainloop()
 
     def jaCadastrado(self):
         email = str(self.cadastroEmail.get())
